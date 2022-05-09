@@ -9,9 +9,13 @@
     "ethereum-waffle": "^3.4.4",
     "ethers": "^5.6.4",
     "hardhat": "^2.9.3",
-    "snarkjs": "^0.4.16"
+    "snarkjs": "^0.4.16",
+    "circomlib-matrix": "^1.0.0"
   },
   "scripts": {
-    "test": ". scripts/bonus-compile.sh && node scripts/bonus-bump-solidity.js && npx hardhat test"
+    "test": " npx hardhat test"
+  },
+  "dependencies": {
+    "file-system": "^2.2.2"
   }
 }

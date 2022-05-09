@@ -7,9 +7,10 @@ template LessThan10() {
     signal output out;
 
     component lt = LessThan(32); 
-
+    
     lt.in[0] <== in;
     lt.in[1] <== 10;
 
     out <== lt.out;
 }
+component main = LessThan10();
